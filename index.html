@@ -45,6 +45,23 @@
 .wechatbg {background: #45c45d;}
 .uichinabg {background: #2b76ae}
 .qqbg {background: #f44a73 }
+.showhide
+{
+	visibility: hidden;
+  	opacity: 0;
+	  -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+	
+}
+.facebook:hover .showhide 
+{
+	visibility: visible;
+  	opacity: 1;
+	-webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+}
 	</style>
 </head>
 <body data-spy="scroll" data-target="#rock-navigation">
@@ -444,7 +461,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 col-sm-4 wow rotateInUpLeft" data-wow-delay="0.3s" >
-					<div class="media wechatbg">
+					<div class="media wechatbg facebook">
 						<a href="#">
 							<div class="media-object pull-left ">
 								<div style="background:url(images/wechat.png); width:64px; height:52px; margin-left:-6px;margin-right:20px"></div>
@@ -453,14 +470,14 @@
 								<h4 class="media-heading tm-social-title">微信</h4>
 								<h3 style="text-transform: capitalize;">15023123972</h3>
 							</div>
-							<div class="media-object pull-right ">
+							<div class="media-object pull-right showhide ">
 								<div style="background: url(images/wechatq.png);    width: 130px;    height: 130px;    margin-top: -100px;    margin-bottom: -30px;    margin-left: -150px;    background-size: contain;"></div>
 							</div>
 						</a>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-4 wow rotateInUpLeft" data-wow-delay="0.6s">
-					<div class="media uichinabg">
+					<div class="media uichinabg  facebook">
 						<a href="http://i.ui.cn/ucenter/221401.html">
 							<div class="media-object pull-left">
 								<div style="background:url(images/uichina.png); width:64px; height:52px; margin-left:-6px;margin-right:20px"></div>
@@ -473,7 +490,7 @@
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-4 wow rotateInUpLeft" data-wow-delay="0.9s">
-					<div class="media qqbg">
+					<div class="media qqbg  facebook">
 						<a href="http://weibo.com/2082905421/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1">
 							<div class="media-object pull-left">
 								<div style="background:url(images/webo.png); width:64px; height:52px; margin-left:-6px;margin-right:20px"></div>
